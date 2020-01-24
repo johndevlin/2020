@@ -1,0 +1,42 @@
+
+.site-header,
+.intro {
+	
+	a:focus {
+		background-color: $yellow;
+		border-color: $black-80;
+		color: $black-80;
+		outline: none;
+	}
+	
+	a.logo:focus {
+		background-color: transparent;
+		border-color: $yellow;
+	}
+	
+	.button:focus {
+		background-color: $yellow;
+		color: $black-80;
+		outline: none;
+	}
+}
+
+a:focus {
+	background-color: $yellow;
+	border-color: $black-80;
+	color: $black-80;
+	outline: none;
+}
+
+.intro a.scroll-down-link:focus {
+	background-color: $dark-green;
+	border-color: $yellow;
+	
+	&:after {
+		background-color: $yellow;
+	}
+	
+	span {
+		
+	}
+}

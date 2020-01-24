@@ -1,0 +1,60 @@
+
+
+// Homepage case study previews
+
+.content-section {
+	margin: 70px 0 160px;
+	padding: 0 100px 0 50px;
+	position: relative;
+	
+	&:after {
+		@extend .hr;
+	}
+	
+	&:last-of-type {
+		margin-bottom: 50px;
+		
+		&:after {
+			display: none;
+		}
+	}
+	
+	p.role-info {
+		color: $black-60;
+		font-size: rem(16);
+	}
+	
+	span.highlight {
+		color: $paragraph-text-colour;
+		font-family: $base-typeface--heavy;
+		text-transform: uppercase;
+	}
+}
+
+.content-intro {
+	margin-bottom: 55px;
+	position: relative;
+	
+	// hr
+	&:after {
+		background-color: $border-colour;
+		content: '';
+		height: 5px;
+		position: absolute;
+		bottom: -32px;
+		width: 240px;
+	}
+	
+	h1 {
+		line-height: 1;
+		margin: 0 0 12px;
+	}
+}
+
+.content-container {
+	max-width: 700px;
+}
+
+
+
+

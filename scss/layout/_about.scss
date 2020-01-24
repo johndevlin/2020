@@ -1,0 +1,14 @@
+
+
+.about-intro-container {
+	display: flex;
+}
+
+img.avatar {
+	border: 3px solid $white-50;
+	border-radius: 50px;
+	box-shadow: $shadow;
+	margin-right: 30px;
+	height: 90px;
+	width: 90px;
+}

@@ -1,0 +1,32 @@
+
+
+$green: #0a7285; 
+$dark-green-hex: #086373;
+$dark-green: transparentize($dark-green-hex, 0.1);
+$red: #d24244; 
+$yellow: #f59f00;
+
+$white: #ffffff;
+$white-95: rgba(255,255,255,0.95);
+$white-85: rgba(255,255,255,0.86);
+$white-50: rgba(255,255,255,0.5);
+$white-20: rgba(255,255,255,0.2);
+
+$black-80: rgba(0,0,0,0.8);
+$black-60: rgba(0,0,0,0.6);
+$black-20: rgba(0,0,0,0.2);
+$black-10: rgba(0,0,0,0.1);
+$black-08: rgba(0,0,0,0.08);
+
+$shadow: 0 3px 7px $black-20;
+
+$base-colour: $red;
+$link-colour: $green;
+
+$paragraph-text-colour: $black-80;
+$heading-text-colour: $green;
+
+$intro-paragraph-text-colour: $white;
+$intro-heading-text-colour: $white-85;
+
+$border-colour: $black-08;

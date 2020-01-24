@@ -1,0 +1,111 @@
+
+
+/* @font-face  */
+
+// Bree Serif
+@font-face {
+	font-family: "BreeSerif-Regular";
+	src: url("/fonts/BreeSerif-Regular/BreeSerif-Regular.eot");
+	src: url("/fonts/BreeSerif-Regular/BreeSerif-Regular.eot?#iefix") format('embedded-opentype'),
+		 url("/fonts/BreeSerif-Regular/BreeSerif-Regular.woff2") format("woff2"),
+		 url("/fonts/BreeSerif-Regular/BreeSerif-Regular.woff") format("woff"),
+		 url("/fonts/BreeSerif-Regular/BreeSerif-Regular.svg") format("svg");
+}
+
+// Transport 
+@import url("//hello.myfonts.net/count/3a5c31");
+ 
+
+@font-face {
+	font-family: 'TransportNewLight';
+	src: url('/fonts/TransportNew/3A5C31_3_0.eot');
+	src: url('/fonts/TransportNew/3A5C31_3_0.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/TransportNew/3A5C31_3_0.woff2') format('woff2'),
+		 url('/fonts/TransportNew/3A5C31_3_0.woff') format('woff'),
+		 url('/fonts/TransportNew/3A5C31_3_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TransportNewMedium';
+	src: url('/fonts/TransportNew/3A5C31_5_0.eot');
+	src: url('/fonts/TransportNew/3A5C31_5_0.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/TransportNew/3A5C31_5_0.woff2') format('woff2'),
+		 url('/fonts/TransportNew/3A5C31_5_0.woff') format('woff'),
+		 url('/fonts/TransportNew/3A5C31_5_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TransportNewHeavy';
+	src: url('/fonts/TransportNew/3A5C31_1_0.eot');
+	src: url('/fonts/TransportNew/3A5C31_1_0.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/TransportNew/3A5C31_1_0.woff2') format('woff2'),
+		 url('/fonts/TransportNew/3A5C31_1_0.woff') format('woff'),
+		 url('/fonts/TransportNew/3A5C31_1_0.ttf') format('truetype');
+}
+
+// Variables 
+$base-typeface: 'TransportNewLight', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$base-typeface--medium: 'TransportNewMedium', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$base-typeface--heavy: 'TransportNewHeavy', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$heading-typeface: 'BreeSerif-Regular', Georgia, Serif;
+
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,500|Fira+Sans:300,400,500&display=swap');
+
+
+
+* {
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+html {
+	font-family: $base-typeface;
+}
+
+
+// Paragraph
+
+p {
+	color: $paragraph-text-colour;
+	font-size: rem(20);
+	font-family: $base-typeface;
+	font-weight: 400;/**/
+	line-height: 1.5;
+	margin: 0 0 20px;
+}
+
+b, 
+strong {
+	font-family: $base-typeface--heavy;
+}
+
+
+// Headings
+
+h1 {
+	color: $heading-text-colour; 
+	font-family: $heading-typeface;
+	font-size: rem(36);
+	font-weight: normal;
+	line-height: 1.2;
+	margin: 0 0 1rem;
+}
+
+h2 {
+	color: $heading-text-colour; 
+	font-family: $heading-typeface;
+	font-size: rem(25);
+	font-weight: normal;
+	margin: 10px 0;
+}
+
+
+// Links 
+
+a {
+	color: $link-colour;
+}

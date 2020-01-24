@@ -1,0 +1,22 @@
+
+			<header class="site-header">
+
+				<a href="/" class="logo" title="Go home">Home: {{site.title}}</a>
+
+				<a href="#main-content-home" class="skip-to-content" title="Skip to main content">Skip to main content</a>
+				
+				<ul style="display: none;" class="unstyled navigation">
+					<li><a href="/" title="Go home">Home</a></li>
+					<li><a href="/#scroll-to-content--home" title="My work">Work</a></li>
+					<li><a href="/about/" title="About me">About</a></li>
+					<!-- <li><a href="mailto:j@johndevlin.me" title="Email me">Contact</a></li> -->
+				</ul>
+				
+				{% assign current = page.url | downcase | split: '/' %}
+				<ul class="unstyled navigation">
+					<li><a href='/' {% if page.title == 'Home' %}class='active'{% endif %}>Home</a></li>
+					<li><a href='/#scroll-to-content--home' {% if current[1] == 'work' %}class='active'{% endif %}>Work</a></li>
+					<li><a href='/about/' {% if current[1] == 'about' %}class='active'{% endif %}>About</a></li>
+				</ul>
+
+			</header>

@@ -1,0 +1,39 @@
+
+.button {
+	background-position: right 20px center;
+	background-size: 26px 14px;
+	background-repeat: no-repeat;
+	border: 2px solid $base-colour;
+	border-radius: 4px;
+	display: inline-block;
+	font-family: $base-typeface--heavy;
+	font-size: rem(18);
+	line-height: 1;
+	padding: 14px 64px 14px 20px;
+	text-decoration: none;
+	
+	& + .button {
+		margin-left: 24px;
+	}
+}
+
+.primary-button {
+	background-color: $base-colour;
+	background-image: url('/img/primary-button-bg.svg');
+	color: $white;
+	
+	&.disabled {
+		border: 0px;
+		background-color: $border-colour; 
+		background-image: none; 
+		color: $black-80;
+		cursor: not-allowed;
+		padding: 16px 20px;
+	}
+}
+
+.secondary-button {
+	background-color: $white;
+	background-image: url('/img/secondary-button-bg.svg');
+	color: $base-colour;
+}

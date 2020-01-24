@@ -1,0 +1,65 @@
+
+.intro p.back {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+	
+	 a {
+		background-position: left center;
+		background-size: 26px 14px;
+		background-repeat: no-repeat;
+		background-image: url('/img/back-arrow.svg');
+		color: $white;
+		font-family: $base-typeface--medium;
+		padding-left: 34px;
+		text-decoration: none;
+	}
+}
+
+.case-study-section {
+	margin: 50px 0 100px;
+	padding: 0 100px 0 50px;
+	position: relative;
+	
+}
+
+.case-study-container {
+	max-width: 700px;
+}
+
+.case-study-section {	
+	
+	&:after {
+		@extend .hr;
+		bottom: -60px;
+	}
+	
+	&:last-of-type {
+		margin-bottom: 50px;
+		
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.case-study-intro {
+	display: flex;
+	
+	.case-study-container {
+		margin-right: 50px;
+	}
+	
+	p {
+		font-family: $base-typeface--medium;
+	}
+}
+
+.case-study-img {
+	margin-top: 40px;
+	transform: translateX(-150px);
+	
+	img {
+		max-height: 320px;
+		max-width: 100%;
+	}
+}

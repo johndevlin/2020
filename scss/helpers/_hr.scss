@@ -1,0 +1,12 @@
+
+.hr {
+	background-image: url('/img/hr.svg');
+	background-repeat: no-repeat;
+	background-size: 180px 20px;
+	content: '';
+	display: block;
+	height: 20px;
+	position: absolute;
+	bottom: -90px;
+	width: 180px;
+}

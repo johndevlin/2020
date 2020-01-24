@@ -1,0 +1,73 @@
+
+.site-header {
+	background-color: $dark-green;
+	align-items: center;
+	display: flex;
+	padding: 16px 50px;
+	position: fixed;
+		top: 0;
+		right: 0;
+		left: 0; 
+	z-index: 2;
+}
+
+.logo {
+	background-image: url('/img/jd.svg');
+	background-repeat: no-repeat;
+	background-size: 48px 40px;
+	border: 2px solid transparent;
+	display: block;
+	font-size: 0px;
+	height: 44px;
+	text-indent: -9999px;
+	width: 52px;
+}
+
+.skip-to-content {
+	display: none;
+}
+
+ul.navigation {
+	flex: 1 1 auto;
+	text-align: left;
+	margin-left: 50px;
+	
+	li {
+		display: inline-block;
+		margin-right: 16px;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	
+	a {
+		border-bottom: 3px solid transparent;
+		color: $white;
+		padding-bottom: 3px;
+		position: relative;
+		text-decoration: none;
+		
+		// Active indicator 
+		&:after {
+			border-radius: 4px;
+			content: '';
+			display: block;
+			height: 5px;
+			position: absolute;
+				bottom: -6px;
+				left: 50%;
+			transform: translateX(-50%);
+			width: 5px;
+		}
+		
+		&.active:after,
+		&.active:hover:after {
+			background-color: $red;
+		}
+		
+		&:hover:after {
+			background-color: $white-50;
+		}
+	}
+}
