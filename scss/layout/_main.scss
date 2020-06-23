@@ -12,11 +12,15 @@ html {
 // Page intro 
 .intro {
 	background-color: $green;
-	padding: calc(72px + 60px) 50px 60px; // 72px = header height 
+	// padding: calc(72px + 60px) 50px 60px; // 72px = header height 
 	position: relative;
 	
 	&.tall {
-		height: 100vh;
+		height: 95vh;
+	}
+	
+	&.case-study {
+		padding: calc(72px + 60px) 50px 60px; // 72px = header height 
 	}
 }
 
@@ -26,11 +30,22 @@ html {
 
 	.intro.tall  {
 		height: auto;
+		padding: calc(72px + 60px) 50px 60px; // 72px = header height 
+		
+		.intro-copy {
+			position: static;
+			top: auto;
+			transform: translateY(0);
+		}
 	}
 }
 
 .intro-copy {
-	max-width: 720px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	max-width: 800px;
 	width: 100%;
 	
 	h1 {
@@ -59,7 +74,12 @@ html {
 	
 	.button {
 		box-shadow: $shadow;
+		color: $white;
 	}
+}
+
+.scroll-down-link {
+	visibility: hidden;
 }
 
 .scroll-down-link {

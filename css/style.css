@@ -370,6 +370,8 @@ th {
   display: block;
   height: 20px;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: -90px;
   width: 180px; }
 
@@ -500,16 +502,26 @@ html {
 
 .intro {
   background-color: #0a7285;
-  padding: calc(72px + 60px) 50px 60px;
   position: relative; }
   .intro.tall {
-    height: 100vh; }
+    height: 95vh; }
+  .intro.case-study {
+    padding: calc(72px + 60px) 50px 60px; }
 
 @media only screen and (max-height: 580px) {
   .intro.tall {
-    height: auto; } }
+    height: auto;
+    padding: calc(72px + 60px) 50px 60px; }
+    .intro.tall .intro-copy {
+      position: static;
+      top: auto;
+      transform: translateY(0); } }
 .intro-copy {
-  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 800px;
   width: 100%; }
   .intro-copy h1 {
     color: #ffffff;
@@ -526,7 +538,11 @@ html {
   .intro-copy .button-container {
     margin-top: 2rem; }
   .intro-copy .button {
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+    color: #ffffff; }
+
+.scroll-down-link {
+  visibility: hidden; }
 
 .scroll-down-link {
   background-color: rgba(8, 99, 115, 0.9);
@@ -712,7 +728,7 @@ ul.navigation {
 
 .content-section {
   margin: 70px 0 160px;
-  padding: 0 100px 0 50px;
+  padding: 0 50px;
   position: relative; }
   .content-section:last-of-type {
     margin-bottom: 50px; }
@@ -741,7 +757,8 @@ ul.navigation {
     margin: 0 0 12px; }
 
 .content-container {
-  max-width: 700px; }
+  max-width: 800px;
+  margin: 0 auto; }
 
 .intro p.back {
   font-size: 1rem;
@@ -756,10 +773,16 @@ ul.navigation {
     padding-left: 34px;
     text-decoration: none; }
 
+.case-study .intro-copy {
+  position: static;
+  top: auto;
+  transform: translateY(0); }
+
 .case-study-section {
-  margin: 50px 0 100px;
-  padding: 0 100px 0 50px;
-  position: relative; }
+  margin: 50px auto 100px;
+  position: relative;
+  max-width: 800px;
+  width: 100%; }
 
 .case-study-container {
   max-width: 700px; }
