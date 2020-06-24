@@ -502,6 +502,7 @@ html {
 
 .intro {
   background-color: #0a7285;
+  padding: 0 calc(36px + 50px) 0 36px;
   position: relative; }
   .intro.tall {
     height: 95vh; }
@@ -728,7 +729,7 @@ ul.navigation {
 
 .content-section {
   margin: 70px 0 160px;
-  padding: 0 50px;
+  padding: 0 calc(36px + 50px) 0 36px;
   position: relative; }
   .content-section:last-of-type {
     margin-bottom: 50px; }
@@ -784,9 +785,6 @@ ul.navigation {
   max-width: 800px;
   width: 100%; }
 
-.case-study-container {
-  max-width: 700px; }
-
 .case-study-section:after {
   bottom: -60px; }
 .case-study-section:last-of-type {
@@ -794,20 +792,26 @@ ul.navigation {
   .case-study-section:last-of-type:after {
     display: none; }
 
-.case-study-intro {
+.case-study-intro .content-container {
   display: flex; }
-  .case-study-intro .case-study-container {
+  .case-study-intro .content-container p {
     margin-right: 50px; }
-  .case-study-intro p {
+  .case-study-intro .content-container p {
     font-family: "TransportNewMedium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  .case-study-intro .content-container .case-study--roles li {
+    white-space: nowrap; }
 
 .case-study-img {
   margin-top: 40px;
-  transform: translateX(-150px); }
+  transform: translateX(-52px); }
   .case-study-img img {
     max-height: 320px;
     max-width: 100%; }
 
+@media only screen and (max-width: 1110px) {
+  .case-study-img {
+    text-align: center;
+    transform: none; } }
 .about-intro-container {
   display: flex; }
 
@@ -853,30 +857,36 @@ a:focus {
 
   .site-header {
     background-color: #086373;
-    padding: 12px 24px;
+    padding: 18px 24px;
     position: static; }
 
   ul.navigation {
     margin-left: 24px; }
 
-  .intro {
-    padding: 24px 24px; }
-    .intro.tall {
+  .intro,
+  .intro.case-study {
+    padding: 36px 24px; }
+    .intro.tall,
+    .intro.case-study.tall {
       height: auto; }
 
-  .intro-copy h1 {
-    font-size: 2.25rem; }
+  .intro-copy {
+    position: static;
+    transform: none; }
+    .intro-copy h1 {
+      font-size: 2.25rem; }
 
   .content-section,
   .case-study-section {
     margin: 80px 0;
+    overflow: hidden;
     padding: 0 24px 0; }
     .content-section:first-child,
     .case-study-section:first-child {
-      margin-top: 36px; }
+      margin-top: 54px; }
 
   .content-intro {
-    margin-bottom: 36px;
+    margin-bottom: 54px;
     position: relative; }
     .content-intro:after {
       height: 3px;
@@ -894,10 +904,9 @@ a:focus {
     .button + .button {
       margin: 1em 0 0 0; }
 
-  .case-study-intro {
-    display: block; }
-    .case-study-intro .case-study-container {
-      margin: 0; }
+  .case-study-intro .content-container {
+    display: block;
+    margin: 0; }
 
   .scroll-down-link {
     bottom: 0px;
@@ -909,9 +918,13 @@ a:focus {
     display: block; }
 
   img.avatar {
-    margin: 0 0 24px; }
+    margin: 0 0 36px; }
 
   .case-study-img {
-    transform: translateX(-100px); } }
+    transform: translateX(-50%);
+    width: 150%; }
+
+  section.content-section:nth-child(even) img {
+    transform: translateX(60%); } }
 
 /*# sourceMappingURL=style.css.map */
