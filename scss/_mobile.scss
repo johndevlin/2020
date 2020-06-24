@@ -99,6 +99,19 @@
 		margin: 0 0 $mobile-padding-y;
 	}
 	
+	.case-study-intro .content-container p {
+		margin-right: 0;
+	}
+	
+	.case-study--roles {
+		display: none;
+	}
+	
+	.case-study--roles--mobile {
+		display: block;
+		font-family: $base-typeface !important;
+	}
+	
 	.case-study-img {
 		transform: translateX(-50%);
 		width: 150%;

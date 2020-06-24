@@ -28,6 +28,10 @@ a:focus {
 	outline: none;
 }
 
+.button:focus {
+	background-image: url('/img/primary-button-bg.svg');
+}
+
 .intro a.scroll-down-link:focus {
 	background-color: $dark-green;
 	border-color: $yellow;

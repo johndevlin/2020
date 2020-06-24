@@ -20,7 +20,7 @@ html {
 	}
 	
 	&.case-study {
-		padding: calc(72px + 60px) 50px 60px; // 72px = header height 
+		padding: calc(72px + 60px) calc(36px + 50px) 60px 36px; // 72px = header height 
 	}
 }
 

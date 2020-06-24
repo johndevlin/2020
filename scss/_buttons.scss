@@ -21,7 +21,17 @@
 	background-color: $base-colour;
 	background-image: url('/img/primary-button-bg.svg');
 	color: $white;
-	
+}
+
+.secondary-button {
+	background-color: $white;
+	background-image: url('/img/secondary-button-bg.svg');
+	color: $base-colour;
+}
+
+.primary-button,
+.secondary-button {
+
 	&.disabled {
 		border: 0px;
 		background-color: $border-colour; 
@@ -29,11 +39,5 @@
 		color: $black-80;
 		cursor: not-allowed;
 		padding: 16px 20px;
-	}
-}
-
-.secondary-button {
-	background-color: $white;
-	background-image: url('/img/secondary-button-bg.svg');
-	color: $base-colour;
+	}	
 }

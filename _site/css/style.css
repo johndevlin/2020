@@ -480,18 +480,20 @@ a {
   background-color: #d24244;
   background-image: url("/img/primary-button-bg.svg");
   color: #ffffff; }
-  .primary-button.disabled {
-    border: 0px;
-    background-color: rgba(0, 0, 0, 0.08);
-    background-image: none;
-    color: rgba(0, 0, 0, 0.8);
-    cursor: not-allowed;
-    padding: 16px 20px; }
 
 .secondary-button {
   background-color: #ffffff;
   background-image: url("/img/secondary-button-bg.svg");
   color: #d24244; }
+
+.primary-button.disabled,
+.secondary-button.disabled {
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0.08);
+  background-image: none;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: not-allowed;
+  padding: 16px 20px; }
 
 * {
   box-sizing: border-box;
@@ -507,7 +509,7 @@ html {
   .intro.tall {
     height: 95vh; }
   .intro.case-study {
-    padding: calc(72px + 60px) 50px 60px; }
+    padding: calc(72px + 60px) calc(36px + 50px) 60px 36px; }
 
 @media only screen and (max-height: 580px) {
   .intro.tall {
@@ -801,6 +803,9 @@ ul.navigation {
   .case-study-intro .content-container .case-study--roles li {
     white-space: nowrap; }
 
+.case-study--roles--mobile {
+  display: none; }
+
 .case-study-img {
   margin-top: 40px;
   transform: translateX(-52px); }
@@ -844,6 +849,9 @@ a:focus {
   border-color: rgba(0, 0, 0, 0.8);
   color: rgba(0, 0, 0, 0.8);
   outline: none; }
+
+.button:focus {
+  background-image: url("/img/primary-button-bg.svg"); }
 
 .intro a.scroll-down-link:focus {
   background-color: rgba(8, 99, 115, 0.9);
@@ -919,6 +927,16 @@ a:focus {
 
   img.avatar {
     margin: 0 0 36px; }
+
+  .case-study-intro .content-container p {
+    margin-right: 0; }
+
+  .case-study--roles {
+    display: none; }
+
+  .case-study--roles--mobile {
+    display: block;
+    font-family: "TransportNewLight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }
 
   .case-study-img {
     transform: translateX(-50%);
